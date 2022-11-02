@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ -z $(docker images -q virtualc:1.8.0) ]; then 
+if [ -z $(docker images -q virtualc:2.3) ]; then 
 	docker build . \
-		-t virtualc:1.8.0 \
+		-t virtualc:2.3 \
 		--build-arg userID=$(id -u) \
 		--build-arg userName=$USER
 fi
@@ -24,4 +24,4 @@ docker run \
 	-v /tmp/.X11-unix:/tmp/.X11-unix \
 	-v $HOME:$HOME \
 	--name virtualc \
-	virtualc:1.8.0
+	virtualc:2.3

@@ -12,7 +12,7 @@ This project enables you to run the Virtual-C IDE on almost every Linux distribu
 
 1. Clone or download this repository.
 2. Open a new terminal and navigate with `cd /Path/To/Repository` into the downloaded repository.
-3. Run `./virtualc.sh` (if not executable, run `chmod +x ./virtualc.sh` beforehand). The first time running the script will take a moment, because the docker image *virtualc:1.8.0* is created initially.
+3. Run `./virtualc.sh` (if not executable, run `chmod +x ./virtualc.sh` beforehand). The first time running the script will take a moment, because the docker image *virtualc:2.3* is created initially.
 4. \[Optional\] To add a launcher to your application menu, create a *virtualc.desktop* file in ~/.local/share/applications with the following content:
 ```
 [Desktop Entry]
